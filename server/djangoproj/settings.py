@@ -29,8 +29,8 @@ SECRET_KEY =\
 DEBUG = True
 
 #ALLOWED_HOSTS y CSRF_TRUSTED_ORIGINS para reflejar la URL raíz de tu aplicación Django.
-ALLOWED_HOSTS=['localhost','https://cuddly-space-chainsaw-xvgq5vgvx56h64vp-8000.app.github.dev']
-CSRF_TRUSTED_ORIGINS=['https://cuddly-space-chainsaw-xvgq5vgvx56h64vp-8000.app.github.dev']
+ALLOWED_HOSTS=['localhost','https://urban-goldfish-9jg47jgj576cxx7j-8000.app.github.dev']
+CSRF_TRUSTED_ORIGINS=['https://urban-goldfish-9jg47jgj576cxx7j-8000.app.github.dev']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
