@@ -21,12 +21,17 @@ const Dealerships = require('./dealership');
 try {
   Reviews.deleteMany({}).then(() => {
     Reviews.insertMany(reviews_data['reviews']);
+  }).catch((error) => {
+    console.error('Error deleting reviews:', error);
   });
   Dealerships.deleteMany({}).then(() => {
     Dealerships.insertMany(dealerships_data['dealerships']);
+  }).catch((error) => {
+    console.error('Error deleting dealerships:', error);
   });
 
 } catch (error) {
+  console.error('Error in try-catch block:', error);
   res.status(500).json({ error: 'Error fetching documents' });
 }
 
